@@ -35,7 +35,8 @@ def second_supply_for_fourth_of_july(holiday_hash)
      }
    }
    
-   fourth_of_july_bbq = holiday_supplies[:summer][:fourth_of_july][2].join
+   fourth_of_july_bbq = [] 
+   fourth_of_july_bbq << holiday_supplies[:summer][:fourth_of_july][2]
    
    return fourth_of_july_bbq
    
