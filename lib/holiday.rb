@@ -72,7 +72,8 @@ def add_supply_to_memorial_day(holiday_hash, supply)
      }
    }
    
-   holiday_hash[:spring][:memorial_day] << supply
+  memorial_day_events = holiday_hash[:spring][:memorial_day] 
+  memorial_day_events << supply
 
 end
 
