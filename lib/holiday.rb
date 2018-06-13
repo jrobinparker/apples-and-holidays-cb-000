@@ -41,13 +41,10 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
       :memorial_day => ["BBQ"]
      }
    }
-   
-   holiday_hash.each do |season|
-      if season == :winter
-        holiday_hash[:winter][:christmas].push(supply)
-        holiday_hash[:winter][:new_years] << supply
-      end
-    end 
+
+    holiday_hash[:winter][:christmas] << supply
+    holiday_hash[:winter][:new_years] << supply
+
    
 end
 
